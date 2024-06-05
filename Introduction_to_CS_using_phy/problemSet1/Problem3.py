@@ -9,27 +9,25 @@ In the case of ties, print the first substring. For example, if s = 'abcbcd', th
 
 Longest substring in alphabetical order is: abc
 """
-s = 'azcbobobegghakl'
+s = 'azcbobobegghiaklabcdefghi'
 longestAlphabeticalSubS = ''
 alphSubSLength=0
 currentSubS=''
 currentSubSLen=0
-
-for char in range(len(s)):
-    if char == len(s)-1:
-        break
-    if s[char] <= s[char+1]:
-        currentSubS += s[char]
-        currentSubSLen += 1
-    elif s[char] > s[char+1] and currentSubSLen > alphSubSLength:
-        currentSubS += s[char]
-        currentSubSLen += 1
-        longestAlphabeticalSubS=currentSubS
-        alphSubSLength=currentSubSLen
-        currentSubSLen=0
-        currentSubS=''
+for i in range(len(s)-1):
+    if s[i]<=s[i+1]:
+        if currentSubSLen==0:
+            currentSubS=s[i]
+        currentSubS+=s[i+1]
+        currentSubSLen+=1
+        if currentSubSLen>alphSubSLength:
+            alphSubSLength=currentSubSLen
+            longestAlphabeticalSubS=currentSubS
     else:
         currentSubSLen=0
         currentSubS=''
+if longestAlphabeticalSubS=='':
+    longestAlphabeticalSubS=s[0]
+
 print("Longest substring in alphabetical order is: " + longestAlphabeticalSubS)
     

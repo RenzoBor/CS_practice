@@ -7,4 +7,4 @@ for m in range(1,13):
     remainingBalance=balance-minimumPayment
     interest=remainingBalance*(annualInterestRate/12)
     balance= remainingBalance + interest
-    print("balance at end of month " + str(m) + " is $"+ str(round(balance,2)))
+print("balance at end of month " + str(m) + " is $"+ str(round(balance,2)))
