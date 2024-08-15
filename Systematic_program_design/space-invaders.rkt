@@ -15,11 +15,11 @@
 (define INVADER-X-SPEED 1.5)  ;speeds (not velocities) in pixels per tick
 (define INVADER-Y-SPEED 1.5)
 (define TANK-SPEED 2)
-(define MISSILE-SPEED 10)
+(define MISSILE-SPEED -10)
 
 (define HIT-RANGE 10)
 
-(define INVADE-RATE 100)
+(define INVADE-RATE 200)
 
 (define BACKGROUND (empty-scene WIDTH HEIGHT))
 
@@ -174,7 +174,9 @@
 ;; < Template from Game >
 
 (define (next-game g)
-  (make-game (next-invaders (game-invaders g))
+  (make-game (next-invaders (if (random-switch "x")            ;; if for invader spawn (produce true or false randomly per game tick)
+                                (random-inv (game-invaders g)) ;; if true spawn random invader
+                                (game-invaders g)))            ;; if false no spawn  
              (next-missiles (game-missiles g))
              (next-tank (game-tank g))))
 
@@ -191,6 +193,20 @@
         [else (cons
                (next-invader (first loi))
                (next-invaders (rest loi)))]))
+;; ListOfInvader -> ListOfInvader
+;; generate a random invader
+(check-random (random-inv empty) (cons (make-invader (random WIDTH) 0 1) empty))
+(check-random (random-inv (cons I1 empty)) (cons I1 (cons (make-invader (random WIDTH) 0 1) empty)))
+
+;(define (random-inv loi) loi)
+(define (random-inv loi)
+  (append loi (cons (make-invader (random WIDTH) 0 (if (= (random 2) 1)
+                                                       1
+                                                       -1)) empty)))
+
+(define (random-switch x)            ;; RANDOM SWITCH FOR INVADER SPAWN (when true, an invader is spawned)
+  (<= (random INVADE-RATE) 5))
+      
 
 ;; Invader -> Invader
 ;; Produce the next invader
@@ -200,9 +216,8 @@
 (check-expect (next-invader (make-invader 0 80 -1)) (make-invader (- 0 INVADER-X-SPEED) (+ 80 INVADER-Y-SPEED) 1))
 
 ;(define (next-invader i) i)
-
 (define (next-invader i)
-  (if (or (<= (invader-x i) 0) (>= (invader-x i) WIDTH))
+  (if (or (and (<= (invader-x i) 0) (= (invader-d i) -1)) (and (>= (invader-x i) WIDTH) (= (invader-d i) 1)))
       (make-invader (+ (invader-x i) (* (invader-d i) INVADER-X-SPEED)) (+ (invader-y i) INVADER-Y-SPEED) (- (invader-d i)))
       (make-invader (+ (invader-x i) (* (invader-d i) INVADER-X-SPEED)) (+ (invader-y i) INVADER-Y-SPEED) (invader-d i))))
 
@@ -262,7 +277,7 @@
 (check-expect (render-invaders empty BACKGROUND) BACKGROUND)
 (check-expect (render-invaders (cons (make-invader 65 80 1) empty) BACKGROUND) (place-image INVADER 65 80 BACKGROUND))
 (check-expect (render-invaders (cons (make-invader 80 155 -1) (cons (make-invader 100 30 1) empty)) BACKGROUND) (place-image INVADER 80 155
-                                                                                                                  (place-image INVADER 100 30 BACKGROUND)))
+                                                                                                                             (place-image INVADER 100 30 BACKGROUND)))
 ;(define (render-invaders loi img) img)
 
 (define (render-invaders loi img)
@@ -291,11 +306,11 @@
 
 ;; Tank -> Image
 ;; Produce the image of the tank in the background
- (check-expect (render-tank T0) (place-image TANK (/ WIDTH 2) (- HEIGHT TANK-HEIGHT/2) BACKGROUND))
- (check-expect (render-tank T1) (place-image TANK 50 (- HEIGHT TANK-HEIGHT/2) BACKGROUND))
+(check-expect (render-tank T0) (place-image TANK (/ WIDTH 2) (- HEIGHT TANK-HEIGHT/2) BACKGROUND))
+(check-expect (render-tank T1) (place-image TANK 50 (- HEIGHT TANK-HEIGHT/2) BACKGROUND))
  
 ;(define (render-tank t) BACKGROUND)
- (define (render-tank t)
+(define (render-tank t)
   (place-image TANK (tank-x t) (- HEIGHT TANK-HEIGHT/2) BACKGROUND))
 
 ;;Game KeyEvent -> Game
@@ -308,7 +323,7 @@
 (define (handle-move g ke)
   (cond [(key=? ke "left") (make-game (game-invaders g) (game-missiles g) (go-left (game-tank g)))]
         [(key=? ke "right") (make-game (game-invaders g) (game-missiles g) (go-right (game-tank g)))]
-        [(key=? ke " ") (make-game (game-invaders g (shoot-missile (game-missiles g)) (game-tank g)))]
+        [(key=? ke " ") (make-game (game-invaders g) (shoot-missile (game-missiles g) (game-tank g)) (game-tank g))]
         [else 
          g]))
 
@@ -321,13 +336,34 @@
 (define (go-right t)
   (make-tank (tank-x t) 1))
 
-;; ListOfMissile -> ListOfMissile
+;; ListOfMissile Tank -> ListOfMissile
 ;; Generate a missile in the tanks position
-(define (shoot-missile lom)
-  (cond [(empty?) (...)]
-        [else (...
-               (fn-for-missile (first lom))
-               (shoot-missile (rest lom)))]))
+(check-expect (shoot-missile empty T0) (cons (make-missile (/ WIDTH 2) (- HEIGHT (image-height TANK))) empty))
+(check-expect (shoot-missile (cons M1 empty) T2) (cons M1 (cons (make-missile 50 (- HEIGHT (image-height TANK))) empty)))
+(define (shoot-missile lom t)
+  (append lom (cons (make-missile (tank-x t) (- HEIGHT (image-height TANK))) empty)))
+
+;; Game -> Game
+;; Recieve the lom and the loi and if one missile touches an invader (HIT-RANGE arround its position) both desapears
+(check-expect (hit-system G0) G0)
+(check-expect (hit-system (make-game (list I1) (list M1) T1)) (make-game (list I1) (list M1) T1))
+(check-expect (hit-system (make-game (list I1) (list M1 M2) T1)) (make-game empty (list M1) T1))
+(check-expect (hit-system (make-game (list I1) (list M1 M3) T1)) (make-game empty (list M1) T1))
+;(define (hit-system g) g)
+
+(define (hit-system s)
+    (if (hit? (game-invaders s) (game-missiles s))
+        (make-game (calculate-invaders (game-invaders s) (game-missiles s)) (calculate-missiles (game-missiles s) (game-invaders s)) (game-tank s))
+        (make-game (game-invaders s) (game-missiles s) (game-tank s))))
+
+;; ListOfInvader ListOfMissile -> Boolean
+;; Recieve a loi and a lom and produce true if a missile hit an invader false otherwise
+  (define)
+
+;; ListOfInvader ListOfMissile -> ListOfInvader
+
+;; ListOfMissile ListOfInvader -> ListOfMissile
+
 ;; Game -> Boolean
 ;; When a invader lands (invader-y = HEIGHT) the game is over
 ;; !!!
