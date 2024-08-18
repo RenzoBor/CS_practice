@@ -1,0 +1,1104 @@
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:103.13-103.19 Error: unbound variable or constructor: oldest
+hw1.sml:104.13-104.19 Error: unbound variable or constructor: oldest
+hw1.sml:105.13-105.19 Error: unbound variable or constructor: oldest
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:110.14-110.23 Error: unbound variable or constructor: is_oldest
+hw1.sml:116.7-116.26 Error: operator is not a function [tycon mismatch]
+  operator: ((int * int * int) list -> int * int * int) option
+  in expression:
+    (SOME get_oldest) ls
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:110.14-110.23 Error: unbound variable or constructor: is_oldest
+hw1.sml:116.7-116.27 Error: operator is not a function [tycon mismatch]
+  operator: ((int * int * int) list -> int * int * int) option
+  in expression:
+    (SOME get_oldest) ls0
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:116.7-116.27 Error: operator is not a function [tycon mismatch]
+  operator: ((int * int * int) list -> int * int * int) option
+  in expression:
+    (SOME get_oldest) ls0
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:108.6-112.28 Error: operator and operand don't agree [tycon mismatch]
+  operator domain: 'Z list
+  operand:         'Y list -> 'Y list
+  in expression:
+    null tl
+hw1.sml:116.7-116.27 Error: operator is not a function [tycon mismatch]
+  operator: ((int * int * int) list -> int * int * int) option
+  in expression:
+    (SOME get_oldest) ls0
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+hw1.sml:116.7-116.27 Error: operator is not a function [tycon mismatch]
+  operator: ((int * int * int) list -> int * int * int) option
+  in expression:
+    (SOME get_oldest) ls0
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val testA = true : bool
+val testB = true : bool
+val testC = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:136.27 Error: unbound variable or constructor: ?
+hw1.sml:134.6-138.44 Error: types of if branches do not agree [tycon mismatch]
+  then branch: int
+  else branch: int list
+  in expression:
+    if null (tl ls)
+    then hd ls
+    else if (is_duplicated <errorvar>) (hd <exp>,tl <exp>)
+         then remove_duplicates (tl ls)
+         else hd ls :: remove_duplicates (tl <exp>)
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:136.27 Error: unbound variable or constructor: ?
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:136.27 Error: unbound variable or constructor: ?
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:136.27 Error: unbound variable or constructor: ?
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:136.27 Error: unbound variable or constructor: ?
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+hw1.sml:131.24 Error: unbound variable or constructor: ?
+hw1.sml:126.13-131.37 Error: right-hand-side of clause doesn't agree with function result type [tycon mismatch]
+  expression:  bool
+  result type:  int * int list -> bool
+  in declaration:
+    is_duplicated =
+      (fn (<pat> : int,<pat> : int list) =>
+            if null <exp> then false else if <exp> then <exp> else <exp>)
+hw1.sml:136.11-138.44 Error: test expression in if is not of type bool [tycon mismatch]
+  test expression: int * int list -> bool
+  in expression:
+    if is_duplicated (hd ls,tl ls)
+    then remove_duplicates (tl ls)
+    else hd ls :: remove_duplicates (tl ls)
+val it = () : unit
+- clear
+= ;
+stdIn:2.1-2.6 Error: unbound variable or constructor: clear
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml"
+= ;
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val it = () : unit
+- remove_duplicates([1,2,3,1,1,4,5,4,3,8,1,4]);
+val it = [2,5,3,8,1,4] : int list
+
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val test12A = true : bool
+val test12B = true : bool
+val test12C = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val test12D = true : bool
+val test12F = true : bool
+val test12G = false : bool
+val it = () : unit
+- dates_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,3,4,2])
+= ;
+val it = [(2011,3,31),(2011,4,28),(2012,2,28)] : (int * int * int) list
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val it = () : unit
+- reasonable_date(1,1,1);
+val it = true : bool
+- reasonable_date(1997,8,28);
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- reasonable_date(1500,13,20)
+= ;
+val it = false : bool
+- reasonable_date(1400,2,30);
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+hw1.sml:168.5-168.8 Error: syntax error: replacing  END with  LET
+hw1.sml:175.1 Error: syntax error found at EOF
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:15.24-15.46
+             ../compiler/TopLevel/interact/evalloop.sml:42.54
+             ../compiler/TopLevel/interact/evalloop.sml:299.20-299.23
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val it = () : unit
+- reasonable_date(1,1,1)
+= ;
+val it = true : bool
+- reasonable_date(1997,8,28)
+= ;
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- reasonable_date(1,8,1);
+val it = true : bool
+- reasonable_date(1997,1,1);
+val it = true : bool
+- reasonable_date(1997,8,1);
+val it = true : bool
+- reasonable_date(1,1,28);
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- reasonable_date(1,1,15);
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:211.19-211.24
+- reasonable_date(1,1,12)
+= ;
+val it = true : bool
+- reasonable_date(1,1,13);
+
+uncaught exception Empty
+  raised at: smlnj/init/pervasive.sml:209.19-209.24
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val test13A = true : bool
+val test13B = true : bool
+val test13C = true : bool
+val test13D = true : bool
+val test13E = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_yaer = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+hw1.sml:170.61 Error: syntax error: replacing  SEMICOLON with  EQUALOP
+
+uncaught exception Compile [Compile: "syntax error"]
+  raised at: ../compiler/Parse/main/smlfile.sml:15.24-15.46
+             ../compiler/TopLevel/interact/evalloop.sml:42.54
+             ../compiler/TopLevel/interact/evalloop.sml:299.20-299.23
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_yaer = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+hw1.sml:169.46-169.70 Error: unbound variable or constructor: days_per_month_leap_year
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_year = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val test13A = true : bool
+val test13B = true : bool
+val test13C = true : bool
+val test13D = true : bool
+val test13E = true : bool
+val test13F = false : bool
+val test13G = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_year = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val is_leap_year = fn : int -> bool
+val reasonable_date = fn : int * int * int -> bool
+val test13A = true : bool
+val test13B = true : bool
+val test13C = true : bool
+val test13D = true : bool
+val test13E = true : bool
+val test13F = false : bool
+val test13G = true : bool
+val it = () : unit
+- is_leap_year(2024)
+= ;
+val it = true : bool
+- is_leap_year(2025)
+= ;
+val it = false : bool
+- is_leap_year(2023);
+val it = false : bool
+- is_leap_year(2000);
+val it = false : bool
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_year = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val is_leap_year = fn : int -> bool
+val reasonable_date = fn : int * int * int -> bool
+val test13A = true : bool
+val test13B = true : bool
+val test13C = true : bool
+val test13D = true : bool
+val test13E = true : bool
+val test13F = false : bool
+val test13G = true : bool
+val it = () : unit
+- is_leap_year 2024;
+val it = true : bool
+- is_leap_year 2000
+= ;
+val it = true : bool
+- is_leap_year 2023;
+val it = false : bool
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw1.sml";
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val months =
+  ["January","February","March","April","May","June","July","August",
+   "September","October","November","December"] : string list
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31] : int list
+val days_per_month_leap_year = [31,29,31,30,31,30,31,31,30,31,30,31]
+  : int list
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val remove_duplicates = fn : int list -> int list
+val number_in_months_challenge = fn : (int * int * int) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val reasonable_date = fn : int * int * int -> bool
+val test13A = true : bool
+val test13B = true : bool
+val test13C = true : bool
+val test13D = true : bool
+val test13E = true : bool
+val test13F = true : bool
+val test13G = true : bool
+val it = () : unit
+- 

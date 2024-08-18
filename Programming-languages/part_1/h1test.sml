@@ -24,4 +24,22 @@ val test9 = what_month 70 = 3
 
 val test10 = month_range (31, 34) = [1,2,2,2]
 
-val test11 = oldest([(2012,2,28),(2011,3,31),(2011,4,28)]) = SOME (2011,3,31)
+val test11A = oldest([(2012,2,28),(2011,3,31),(2011,4,28)]) = SOME (2011,3,31)
+val test11B = oldest([]) = NONE
+val test11C = oldest([(1,2,3)]) = SOME (1,2,3)
+
+val test12A = number_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,3,4]) = 3
+val test12B = number_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,3,4,2]) = 3
+val test12C = number_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,2,2,3,3,4]) = 3
+
+val test12D = dates_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,3,4]) = [(2012,2,28),(2011,3,31),(2011,4,28)]
+val test12F = dates_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,2,4,5,2,3,4]) = [(2012,2,28),(2011,3,31),(2011,4,28)]
+val test12G = dates_in_months_challenge([(2012,2,28),(2013,12,1),(2011,3,31),(2011,4,28)],[2,3,4,2]) = [(2012,2,28),(2011,3,31),(2011,4,28)];
+
+val test13A = reasonable_date(1,1,1) = true
+val test13B = reasonable_date(1997,8,28) = true
+val test13C = reasonable_date(~300,4,15) = false
+val test13D = reasonable_date(1500,13,20) = false
+val test13E = reasonable_date(1400,2,30) = false
+val test13F = reasonable_date(2024,2,29) = true					      
+val test13G = reasonable_date(2025,2,29) = false
