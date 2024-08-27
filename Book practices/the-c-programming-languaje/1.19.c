@@ -11,7 +11,7 @@ int reverse(char s[]){
 };
 
 int main(){
-    char s[] = "hijo de la chingada";
+    char s[] = "this is a string";
     int num;
     num = reverse(s);
     int len;
