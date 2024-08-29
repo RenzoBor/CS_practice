@@ -1,13 +1,15 @@
-#include <stdio.h> 
+#include <stdio.h>
+const int BLANKSAMOUNT = 4; 
 void main(){
-    const int BLANKSAMOUNT = 5;
+
     int c;
     
     while ((c = getchar()) != EOF){
-        if(c = '\t'){
+        if(c == '\t'){
             int i;
-            for( i = 0 ; i < BLANKSAMOUNT ; i++)
+            for( i = 0 ; i < BLANKSAMOUNT; i++){
             putchar(' ');
-        } else { putchar(c);}   
+            }
+            } else { putchar(c);}   
     }
 }
