@@ -39,14 +39,38 @@ datatype typ = Anything
 (*(listOf String) -> (listOf String)*)
 (*Recieve a LOS and produce a LOS made of the items that starts with an uppercase*)
 
+(*fun only_capitals LOS =
+    List.filter(fn s => Char.isUpper(String.sub(s, 0)) , LOS)*)
 fun only_capitals LOS =
-    List.filter(Char.isUpper String.sub (_,0), LOS)
-val test1A = only_capitals [] = [];
-val test1A = only_capitals [A, B, C] = [A, B, C];
-val test1A = only_capitals [asd, ASd, dsa, Dsa] = [Asd, Dsa];
-val test1A = only_capitals [a, b, c, d] = [];
+    List.filter (fn s => Char.isUpper (String.sub (s, 0))) LOS;
+	       
+(*Problem 2: *)
+(*(listOf String) -> String*)
+(*Recieve a LOS and produce the longest String in the list. In case of tie, the first longest*)
 
+fun longest_string1 LOS =
+    List.foldl(fn (s1, s2) =>if String.size s1 > String.size s2
+			     then s1
+			     else s2) "" LOS;
 
+(*Problem 3: *)
+(*Same as before, but in case of tie produce the last longest*)
+
+fun longest_string2 LOS =
+    List.foldl(fn (s1, s2) =>if String.size s1 >= String.size s2
+			     then s1
+			     else s2) "" LOS;
+						 
+(*Problem 4: *)
+(*(Number Number -> Boolean) -> LOS -> String*)
+
+fun longest_string_helper (fn (n1, n2) => fn LOS => )
+	
+val test4a = longest_string3 ["A","bc","C"] = "bc"
+val test4a = longest_string3 ["A","bc","C"] = "bc"
+val test4a = longest_string3 ["A","bc","C"] = "bc"
+val test4b = longest_string4 ["A","B","C"] = "C"
+						 
 	 
 
 	       
