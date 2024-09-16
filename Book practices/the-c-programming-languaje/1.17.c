@@ -1,17 +1,26 @@
 #include <stdio.h>
+#include <string.h>
 #define MAXSTR = 100
-void main(){
+/* A function that recieve a string reverse it and return it in place*/ 
+char* reverse(char s[]){
+    static char result[100]; // Static para que la variable se mantenga despues de que la funcion termine
+    int j, i;
+    i = strlen(s);
+
+    for(j = 0; i > 0 ; i--){
+        result[j] = s[i-1];
+        j++;
+    }
+    result[j] = '\0';
+    return result;
+
+}
+int main(){
     
-    int c, i;
-    char str[1000];
-    i=0;
-    while((c=getchar())!= EOF){
-         str[i] = c;
-         i++;
-         if (c == '\n' && i > 80)
-         {
-            printf("%s %6.0d",str, i);
-         }
-    };
+    char string[] = "Hello world";
+
+    printf("%s\n", reverse(string));
+
+    return 0;
     
 }
